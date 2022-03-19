@@ -1,6 +1,6 @@
 # CS 225 Data Structures
 
-## Final Project Proposal (jyjeong2-jdoo2-sc27-sohyunp3)
+## Final Project Proposal
 
 **Leading Question**: Find the minimum cost path from the given source and destination region. Using the 
 destination features, we will calculate the frequency of each airport depending on how many times a 
@@ -38,22 +38,3 @@ to the destination. It will take our graph dataset and a start node as input, an
 computed using several factors; distance, popularity, etc... . Given that N is the number of nodes and E is the 
 number of edges, the big O estimation for Dijkstra’s algorithm is O(ElogN). For the complex algorithm, we decided 
 to utilize eulerian path algorithm which figure out if we can travel from source node to destination node with visiting each edge exactly once. This algorithm will allow us to find if it is possible to find flight to a certain country without taking redundant flights. For this algorithm, we only need source node, destination node, and the graph representing air routes as an input, however, it is required to implement some helper functions in order to make it easier to implement and make the code more understandable. First, we need a traversal algorithm to figure out if all the nodes are visited starting from the source node. Next, we can implement helper function that return false if any unvisited node is still remaining and if destination node is the one that is unvisited. When this helper function returns false, we can conclude that we need to take some redundant flights in order to get to certain country
-
-**Timeline**: 
-identify a list of tasks such as data acquisition, data processing, completion of each individual algorithm, production 
-of final deliverables, etc…
-
-*Week 1*
-- Combine data set of airports and routes to sort data in one set
-- Implement an algorithm to find the distance between airports
-
-*Week 2*
-- Using BFS, traverse through the subgraph created based on the input source node with the maximum distance d from the source node 
-- List up the possible destinations with the result of BFS traversal
-
-*Week 3*
-- Implement an algorithm to calculate the approximate price of each flight utilizing the frequency and distance of airports
-- Implement the shortest path algorithm to find the cheapest route from a source to a destination
-
-*Week 4*
-- Visualize derived data into a connectivity graph
