@@ -14,3 +14,7 @@
 
         make
         ./main
+![alt text](https://github.com/djh991102/OpenFlight/blob/main/run.png)
+
+**Path Visualization**:
+![alt text](https://github.com/djh991102/OpenFlight/blob/main/path.png)
